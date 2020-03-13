@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1B09B00F241B1C2F00984E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B00E241B1C2F00984E51 /* AppDelegate.swift */; };
 		1B09B011241B1C2F00984E51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B010241B1C2F00984E51 /* SceneDelegate.swift */; };
-		1B09B013241B1C2F00984E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B012241B1C2F00984E51 /* ViewController.swift */; };
 		1B09B016241B1C2F00984E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B09B014241B1C2F00984E51 /* Main.storyboard */; };
 		1B09B018241B1C3100984E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B09B017241B1C3100984E51 /* Assets.xcassets */; };
 		1B09B01B241B1C3100984E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B09B019241B1C3100984E51 /* LaunchScreen.storyboard */; };
+		1B09B029241B1EDD00984E51 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B028241B1EDD00984E51 /* PersonTableViewCell.swift */; };
+		1B09B02B241B1F1200984E51 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B02A241B1F1200984E51 /* Person.swift */; };
+		1B09B02D241B1F2B00984E51 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B02C241B1F2B00984E51 /* PersonController.swift */; };
+		1B09B02F241B1F8E00984E51 /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B02E241B1F8E00984E51 /* PersonSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B09B00B241B1C2F00984E51 /* FindACrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindACrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B09B00E241B1C2F00984E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B09B010241B1C2F00984E51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B09B012241B1C2F00984E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B09B015241B1C2F00984E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B09B017241B1C3100984E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B09B01A241B1C3100984E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B09B01C241B1C3100984E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B09B028241B1EDD00984E51 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		1B09B02A241B1F1200984E51 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1B09B02C241B1F2B00984E51 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		1B09B02E241B1F8E00984E51 /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		1B09B00D241B1C2F00984E51 /* FindACrew */ = {
 			isa = PBXGroup;
 			children = (
+				1B09B024241B1DB900984E51 /* Models */,
+				1B09B025241B1DC000984E51 /* Views */,
+				1B09B023241B1DA000984E51 /* ViewControllers */,
+				1B09B022241B1D6F00984E51 /* Storyboards */,
+				1B09B017241B1C3100984E51 /* Assets.xcassets */,
 				1B09B00E241B1C2F00984E51 /* AppDelegate.swift */,
 				1B09B010241B1C2F00984E51 /* SceneDelegate.swift */,
-				1B09B012241B1C2F00984E51 /* ViewController.swift */,
-				1B09B014241B1C2F00984E51 /* Main.storyboard */,
-				1B09B017241B1C3100984E51 /* Assets.xcassets */,
-				1B09B019241B1C3100984E51 /* LaunchScreen.storyboard */,
 				1B09B01C241B1C3100984E51 /* Info.plist */,
 			);
 			path = FindACrew;
+			sourceTree = "<group>";
+		};
+		1B09B022241B1D6F00984E51 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1B09B019241B1C3100984E51 /* LaunchScreen.storyboard */,
+				1B09B014241B1C2F00984E51 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1B09B023241B1DA000984E51 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B09B02E241B1F8E00984E51 /* PersonSearchTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1B09B024241B1DB900984E51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B09B02A241B1F1200984E51 /* Person.swift */,
+				1B09B02C241B1F2B00984E51 /* PersonController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B09B025241B1DC000984E51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B09B028241B1EDD00984E51 /* PersonTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B09B013241B1C2F00984E51 /* ViewController.swift in Sources */,
+				1B09B02F241B1F8E00984E51 /* PersonSearchTableViewController.swift in Sources */,
+				1B09B02B241B1F1200984E51 /* Person.swift in Sources */,
 				1B09B00F241B1C2F00984E51 /* AppDelegate.swift in Sources */,
 				1B09B011241B1C2F00984E51 /* SceneDelegate.swift in Sources */,
+				1B09B029241B1EDD00984E51 /* PersonTableViewCell.swift in Sources */,
+				1B09B02D241B1F2B00984E51 /* PersonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
